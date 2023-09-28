@@ -1,7 +1,26 @@
+
+
 .completed {
 
     text-decoration: line-through;
-    color: red;
+    
 }
 
 
+
+body {
+    background-color: antiquewhite;
+}
+
+
+.spanTag {
+
+    color: red;
+}
+
+.trashCan {
+
+margin-left: 10px;
+cursor:grab;
+
+}
