@@ -29,7 +29,7 @@ inputbtn.addEventListener("click", function () {
     id: Date.now(),
   };
 // Pushed user input and object into array
-  taskArray.push(newTask);
+  taskArray.push(userInfo);
 
   // Creates new html elements for user input.
   const taskItem = document.createElement("li");
@@ -76,7 +76,7 @@ inputbtn.addEventListener("click", function () {
     }
     counter.innerText = `tasks done: ${countedTasks}`;
     let removeText = taskItem.firstChild.firstChild.textContent;
-    let indexToRemove = taskArray.indexOf("newTask");
+    let indexToRemove = taskArray.indexOf(removeText);
     taskArray.splice(indexToRemove, 1);
 
     taskItem.remove();
